@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     #container {
+        width: 100vw;
+        height: auto;
+        display: flex; 
+        flex-direction: row;
+    } 
+    #LeftContainer {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    #RightContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #FooterContainer {
+        display: flex;
+        width: 100vw; 
+    }
+    #pinkSquares {
+        height: 100px;
+        background-color: tomato;
+        margin: 20px;
+        border: 2px solid;
+    }
+    #blueRects {
+        height: 100px;
+        border: 2px solid;
+        background-color: rgb(75, 177, 255);
+        margin: 20px;
+    }
+    #yellowRects {
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(255, 225, 1);
+        margin: 20px;
+        border: 2px solid;
+    }
+   
+  </style>
+</head>
+<body>
+<div id="container">
+    <div id="LeftContainer">
+        <div id="pinkSquares"></div>
+        <div id="pinkSquares"></div>
+        <div id="pinkSquares"></div>
+    </div>
+    <div id="RightContainer">
+        <div id="blueRects"></div>
+        <div id="blueRects"></div>
+        <div id="blueRects"></div>
+    </div>
+</div>  
+<div id="FooterContainer">
+    <div id="yellowRects"></div>
+</div>
+</body>
+</html>
