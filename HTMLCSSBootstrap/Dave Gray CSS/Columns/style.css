@@ -16,13 +16,16 @@ body {
 .columns p {
     margin-top: 0px;
 }
-.quote {
-    margin-top: 0px;
+.columns .quote {           /* Specificity Example. If .columns is removed, its less specific as compared to .columns p which has higher score */
+    margin-top: 2rem;
     background-color: #333;
     color: white;
     padding: 1rem;
     font-size: 2rem;
     break-inside: avoid;
+    column-span: all;
 }
 
-
+.nowrap {
+    white-space: nowrap;
+}
