@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.columns {
+    /* columns: 4;
+    column-width: 250px;
+     */
+    column-gap: 3rem;
+    column-rule: 2px solid;  
+    columns: 4 250px;
+}
+.columns p {
+    margin-top: 0px;
+}
+.quote {
+    margin-top: 0px;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    break-inside: avoid;
+}
+
+
