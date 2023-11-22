@@ -22,8 +22,12 @@ body {
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
     background-color: aliceblue;
-    background-image: linear-gradient(to right, left, steelblue, #fff);
-}
+    background-image: url(../Images/images/css_course/bubbles.png), /* The bubble comes first and then the gradient comes after*/
+                      linear-gradient(to left, steelblue, #fff);
+    background-repeat: repeat-y;
+    background-position: right center;
+    background-size: 10%, auto;
+}  
 .container {
     background-color: rgb(251, 210, 156);
     background-image: url('../Images/images/css_course/map-2176x1451.png');
