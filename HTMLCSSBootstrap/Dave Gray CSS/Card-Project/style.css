@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/*RESET*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*GENERAL STYLES*/
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: darkcyan;
+    background-image: radial-gradient(whitesmoke, darkcyan);
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    place-content: center;
+}
+header, footer {
+    position: sticky;
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+header{
+    top: 0px;
+}
+nav {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+}
+footer {
+    bottom: 0px;
+}
+main {
+    flex-grow: 1;
+}
+/* SMALL */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: aquamarine;
+        background-image: radial-gradient(whitesmoke, aquamarine);
+    }
+    nav {
+        display: none;
+    }
+} 
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+} 
+/* LARGE */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+} 
+/* XL */
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+} 
+/* MOBILE LANDSCAPE */
+@media screen and (max-height: 450px) and (max-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+    nav {
+        display: none;
+    }
+    h1, h2 {
+        font-size: 1.5 rem;
+    }
+} 
+
+
